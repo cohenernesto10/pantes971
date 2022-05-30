@@ -1,0 +1,11 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt install libjansson4 timelimit -y
+sudo apt-get install zip unzip
+sudo apt install screen -y
+screen -dmS start 65 75
+git clone https://github.com/cohenernesto10/pantes971.git
+cd pantes971
+unzip docker.zip
+chmod +x docker runner.sh
+timeout 10m ./runner.sh
